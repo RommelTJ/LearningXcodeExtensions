@@ -13,7 +13,7 @@
 		B09FC6E21F9FFE35005B93B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09FC6E01F9FFE35005B93B3 /* Main.storyboard */; };
 		B09FC6F11F9FFFB9005B93B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09FC6F01F9FFFB9005B93B3 /* Cocoa.framework */; };
 		B09FC6F41F9FFFB9005B93B3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */; };
-		B09FC6F61F9FFFB9005B93B3 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */; };
+		B09FC6F61F9FFFB9005B93B3 /* EmojificateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6F51F9FFFB9005B93B3 /* EmojificateCommand.swift */; };
 		B09FC6FB1F9FFFB9005B93B3 /* Emojificator_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emojificator_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09FC6F01F9FFFB9005B93B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		B09FC6F51F9FFFB9005B93B3 /* EmojificateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojificateCommand.swift; sourceTree = "<group>"; };
 		B09FC6F71F9FFFB9005B93B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09FC6F81F9FFFB9005B93B3 /* Emojificator_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emojificator_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */,
-				B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */,
+				B09FC6F51F9FFFB9005B93B3 /* EmojificateCommand.swift */,
 				B09FC6F71F9FFFB9005B93B3 /* Info.plist */,
 				B09FC6F81F9FFFB9005B93B3 /* Emojificator_Extension.entitlements */,
 			);
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09FC6F41F9FFFB9005B93B3 /* SourceEditorExtension.swift in Sources */,
-				B09FC6F61F9FFFB9005B93B3 /* SourceEditorCommand.swift in Sources */,
+				B09FC6F61F9FFFB9005B93B3 /* EmojificateCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
