@@ -11,7 +11,35 @@
 		B09FC6DD1F9FFE35005B93B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6DC1F9FFE35005B93B3 /* ViewController.swift */; };
 		B09FC6DF1F9FFE35005B93B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09FC6DE1F9FFE35005B93B3 /* Assets.xcassets */; };
 		B09FC6E21F9FFE35005B93B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09FC6E01F9FFE35005B93B3 /* Main.storyboard */; };
+		B09FC6F11F9FFFB9005B93B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09FC6F01F9FFFB9005B93B3 /* Cocoa.framework */; };
+		B09FC6F41F9FFFB9005B93B3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */; };
+		B09FC6F61F9FFFB9005B93B3 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */; };
+		B09FC6FB1F9FFFB9005B93B3 /* Emojificator_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B09FC6F91F9FFFB9005B93B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09FC6CF1F9FFE35005B93B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09FC6ED1F9FFFB8005B93B3;
+			remoteInfo = Emojificator_Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B09FC6FF1F9FFFB9005B93B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B09FC6FB1F9FFFB9005B93B3 /* Emojificator_Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B09FC6D71F9FFE35005B93B3 /* LearningXcodeExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningXcodeExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +49,12 @@
 		B09FC6E11F9FFE35005B93B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B09FC6E31F9FFE35005B93B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09FC6E41F9FFE35005B93B3 /* LearningXcodeExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningXcodeExtensions.entitlements; sourceTree = "<group>"; };
+		B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emojificator_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09FC6F01F9FFFB9005B93B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		B09FC6F71F9FFFB9005B93B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09FC6F81F9FFFB9005B93B3 /* Emojificator_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emojificator_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B09FC6EB1F9FFFB8005B93B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09FC6F11F9FFFB9005B93B3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				B09FC6D91F9FFE35005B93B3 /* LearningXcodeExtensions */,
+				B09FC6F21F9FFFB9005B93B3 /* Emojificator_Extension */,
+				B09FC6EF1F9FFFB9005B93B3 /* Frameworks */,
 				B09FC6D81F9FFE35005B93B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B09FC6D71F9FFE35005B93B3 /* LearningXcodeExtensions.app */,
+				B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +108,25 @@
 			path = LearningXcodeExtensions;
 			sourceTree = "<group>";
 		};
+		B09FC6EF1F9FFFB9005B93B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09FC6F01F9FFFB9005B93B3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B09FC6F21F9FFFB9005B93B3 /* Emojificator_Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B09FC6F31F9FFFB9005B93B3 /* SourceEditorExtension.swift */,
+				B09FC6F51F9FFFB9005B93B3 /* SourceEditorCommand.swift */,
+				B09FC6F71F9FFFB9005B93B3 /* Info.plist */,
+				B09FC6F81F9FFFB9005B93B3 /* Emojificator_Extension.entitlements */,
+			);
+			path = Emojificator_Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +137,34 @@
 				B09FC6D31F9FFE35005B93B3 /* Sources */,
 				B09FC6D41F9FFE35005B93B3 /* Frameworks */,
 				B09FC6D51F9FFE35005B93B3 /* Resources */,
+				B09FC6FF1F9FFFB9005B93B3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B09FC6FA1F9FFFB9005B93B3 /* PBXTargetDependency */,
 			);
 			name = LearningXcodeExtensions;
 			productName = LearningXcodeExtensions;
 			productReference = B09FC6D71F9FFE35005B93B3 /* LearningXcodeExtensions.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B09FC6ED1F9FFFB8005B93B3 /* Emojificator_Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09FC6FC1F9FFFB9005B93B3 /* Build configuration list for PBXNativeTarget "Emojificator_Extension" */;
+			buildPhases = (
+				B09FC6EA1F9FFFB8005B93B3 /* Sources */,
+				B09FC6EB1F9FFFB8005B93B3 /* Frameworks */,
+				B09FC6EC1F9FFFB8005B93B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emojificator_Extension;
+			productName = Emojificator_Extension;
+			productReference = B09FC6EE1F9FFFB8005B93B3 /* Emojificator_Extension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +177,10 @@
 				ORGANIZATIONNAME = "Rommel Rico";
 				TargetAttributes = {
 					B09FC6D61F9FFE35005B93B3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					B09FC6ED1F9FFFB8005B93B3 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -113,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				B09FC6D61F9FFE35005B93B3 /* LearningXcodeExtensions */,
+				B09FC6ED1F9FFFB8005B93B3 /* Emojificator_Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +212,13 @@
 			files = (
 				B09FC6DF1F9FFE35005B93B3 /* Assets.xcassets in Resources */,
 				B09FC6E21F9FFE35005B93B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09FC6EC1F9FFFB8005B93B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +234,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B09FC6EA1F9FFFB8005B93B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09FC6F41F9FFFB9005B93B3 /* SourceEditorExtension.swift in Sources */,
+				B09FC6F61F9FFFB9005B93B3 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B09FC6FA1F9FFFB9005B93B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09FC6ED1F9FFFB8005B93B3 /* Emojificator_Extension */;
+			targetProxy = B09FC6F91F9FFFB9005B93B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B09FC6E01F9FFE35005B93B3 /* Main.storyboard */ = {
@@ -262,6 +374,7 @@
 		B09FC6E81F9FFE35005B93B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LearningXcodeExtensions/LearningXcodeExtensions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -278,6 +391,7 @@
 		B09FC6E91F9FFE35005B93B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LearningXcodeExtensions/LearningXcodeExtensions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +401,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rommelrico.LearningXcodeExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		B09FC6FD1F9FFFB9005B93B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Emojificator_Extension/Emojificator_Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RV5CH2XTD;
+				INFOPLIST_FILE = Emojificator_Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rommelrico.LearningXcodeExtensions.Emojificator-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B09FC6FE1F9FFFB9005B93B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Emojificator_Extension/Emojificator_Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RV5CH2XTD;
+				INFOPLIST_FILE = Emojificator_Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rommelrico.LearningXcodeExtensions.Emojificator-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -308,6 +454,15 @@
 			buildConfigurations = (
 				B09FC6E81F9FFE35005B93B3 /* Debug */,
 				B09FC6E91F9FFE35005B93B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09FC6FC1F9FFFB9005B93B3 /* Build configuration list for PBXNativeTarget "Emojificator_Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09FC6FD1F9FFFB9005B93B3 /* Debug */,
+				B09FC6FE1F9FFFB9005B93B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
